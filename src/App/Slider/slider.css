@@ -1,0 +1,142 @@
+.slider {
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  
+}
+.awssld__bullets{
+  position: absolute;
+  z-index: 10000;
+  background-color: #ffffff00 !important;
+  border: none !important;
+  box-shadow: none !important;
+  }
+.slider-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slider-information-wrap {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  max-width: 640px;
+  position: absolute;
+  z-index: 10000;
+}
+.information-img-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.information-img-box2 {
+  display: flex;
+  flex-direction: column;
+}
+.slider-information {
+  background-color: #29abcd;
+  padding: 20px 30px;
+}
+.inf-name {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.inf-text {
+  color: #ffffff;
+  font-weight: 300;
+}
+.slider-inf-img {
+  background-position: center;
+  background-size: cover;
+}
+.slider-img {
+  width: 100%;
+  height: 100%;
+}
+@media(min-width:1650px) {
+.slider-information {
+  width: 480px;
+  height: 300px;
+}
+.inf-name {
+  font-size: 30px;
+  line-height: 40px;
+}
+.inf-text {
+  font-size: 18px;
+  line-height: 26px;
+}
+.slider-inf-img {
+  width: 160px;
+  height: 100px;
+}
+
+.slider-information-wrap {
+  top: 15%;
+  left: 53%;
+}}
+
+@media(max-width:1649px) {
+.slider-information {
+  width: 280px;
+  height: 200px;
+}
+.inf-name {
+  font-size: 18px;
+  line-height: 20px;
+}
+.inf-text {
+  font-size: 10px;
+  line-height: 16px;
+}
+.slider-inf-img {
+  width: 100px;
+  height: 66.7px;
+}
+.slider-information-wrap {
+  top: 22%;
+  left: 57%;
+}}
+@media(max-width:1199px) {
+.slider-information-wrap {
+  display: none;
+}
+}
+@media(max-width:767px) {
+  .slider-information {
+    width: 200px;
+    height: 280px;
+  }
+  /* .slider-img {
+    display: none;
+  } */
+  .slider-information-wrap {
+    top: 18%;
+    left: 63%;
+  }
+.slider {
+  background-size: cover;
+}
+.slider-information-wrap {
+  display: none;
+}
+  .slider-information {
+    display: none;
+  }
+}
+
+
+.awssld {
+    --organic-arrow-thickness: 4px !important ;
+    --slider-height-percentage: 35% !important ;  
+    --control-button-width: 5% !important;  
+    --content-background-color: #ffffff00 !important;
+}
+.awssld__bullets {
+    bottom: -45px !important;
+   
+}

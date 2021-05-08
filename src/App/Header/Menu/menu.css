@@ -1,0 +1,30 @@
+
+.category-menu-a {
+  text-decoration: none;
+   color: #32272b;
+}
+
+.category-menu {
+ display: inline-block;
+ text-align: center;
+ color: #32272b;
+ font-size: 20px;
+ font-weight: 300;
+ padding: 0 15px;
+ letter-spacing: 1px;
+line-height: 70px;
+}
+
+
+.category-menu:hover {
+ background-color: #f7d54a;
+ color: #000000;
+}
+.wrapper-search {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+ margin-top: -3px;
+  
+
+}

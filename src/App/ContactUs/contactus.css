@@ -1,0 +1,17 @@
+.contact-us-form{
+  display: flex;
+  flex-direction: column;
+
+margin: 0 auto;
+width: 35%;
+}
+.author,
+.text-area,
+.email {
+  width: 100% !important;
+}
+
+.contact-us-form input::placeholder,
+.contact-us-form textarea::placeholder {
+  color: #000;
+}

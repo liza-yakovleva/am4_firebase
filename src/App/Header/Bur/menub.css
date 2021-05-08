@@ -1,0 +1,94 @@
+.menu-b {
+  position: fixed;
+  width: 20vw;
+  height: 100vh;
+  top: 0px;
+  left: 0;
+  z-index: 100000000;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-130%);
+  transition: all 0.2s;
+}
+.btn-close {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+   width: 20px;
+   background-color: #ffffff00;
+   height: 20px;
+   border: none;
+   position: absolute;
+  top: 2%;
+  right: 7%;
+}
+.menu-b.active{
+
+ transform: translate(0);
+ }
+
+.menu__content {
+  width: 30%;
+  height: 100%;
+  background-color:black;
+  color: aqua;
+  display: flex;
+  flex-direction: column;;
+  align-items: center;
+    transition: all 0.2s;
+}
+.menu__header {
+  padding: 10px;
+  font-size: 2rem;
+  сolor:rgb(233, 15, 15);
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align:center;
+
+}
+.menub-a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.3rem;
+margin-top: 30px;
+}
+.menub-li{
+  
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+}
+.menub-ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.material-icons{
+  color: #30b5d8;
+margin-left: 10px;
+margin-top: 30px;
+}
+@media screen and (max-width:768px){
+  .menu__content {
+  width: 100%;
+}
+  .blur {
+   
+    backdrop-filter:none;
+    
+  }
+}
+@media (max-width: 992px) {
+  .menu-b {
+  
+  width: 40vw;
+ 
+}
+}
+@media (max-width: 475px) {
+.menub-a{
+  
+  font-size: 1.0rem;
+
+}
+}

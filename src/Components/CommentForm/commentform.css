@@ -1,0 +1,55 @@
+textarea,
+#author,
+#email{
+	width: 20%;
+	background-color: #e6e6e6;
+	font-size: 15px;
+	padding: 5px 5px 5px 10px;
+	border-radius: 8px;
+}
+.comment-form textarea {
+	width: 50%;
+	max-width: 800px;
+	min-width: 300px;
+	box-shadow: 0 0 9px 9px rgba(11, 9, 32, 0.14);
+}
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+	color: #000;
+}
+small {
+	font-size: 12px;
+}
+
+.comment-btn {
+    margin: 1em 0 1.5em 0;
+}
+.comment-btn button {
+	text-transform: uppercase;
+	border: none;
+	height: 44px;
+    font-size: 14px;
+    padding: 0 25px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color: rgb(216, 31, 31);
+    color: #fff;
+    cursor: pointer;
+}
+.comment-btn button:hover {
+	background-color: #eeab2f;
+}
+.comment-form input:focus, .comment-form button:focus, .comment-form textarea:focus {
+	border: none;
+	outline: none;
+}
+@media screen and (max-width: 620px){
+    .comment-form input {
+		
+		width: 90% !important;
+	}
+	/* .comment-btn button {
+		width: 100%;
+		margin-bottom: 15px;
+	} */
+}
