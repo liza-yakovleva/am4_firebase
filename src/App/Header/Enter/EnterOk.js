@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import '../../../common/style/base.css'
 import "./enter.css"
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firebase-auth'
 import { database } from '../../../firebase'
 import { Link } from "react-router-dom"
 
@@ -32,7 +33,7 @@ componentDidMount() {
 	return (
 		<>
 			<Link to="/favorites"><button className="favorite">
-				<div class="heart"></div>
+				<div className="heart"></div>
 				</button></Link>
 			{
 				this.state.dataUsers ?

@@ -15,7 +15,7 @@ class GameSinglePage extends Component {
       }
    }
 
-    UNSAFE_componentWillMount() {
+   componentDidMount() {
     database.ref('/1/game_base/').on('value', (snapshot) => {
       this.setState({
         data: snapshot.val()
@@ -80,7 +80,7 @@ class GameSinglePage extends Component {
                                 : this.state.data[id].share}
                             </div>
                             <div className="pag-dowland-ico">
-                              <button button class = "btn-like"
+                              <button button className = "btn-like"
                                 onClick={() =>
                                   isLiked
                                     ? gameRemoveLike(id)
@@ -91,12 +91,12 @@ class GameSinglePage extends Component {
                                   ? (
                                   <span>
                                     
-                                    <i class="fas fa-heart"></i>
+                                    <i className="fas fa-heart"></i>
                                   </span>
                                   )
                                   : (
                                   <span>
-                                    <i class="far fa-heart"></i>
+                                    <i className="far fa-heart"></i>
                                   </span>
                                 )}
                               </button>

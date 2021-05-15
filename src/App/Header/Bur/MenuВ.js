@@ -12,11 +12,11 @@ const MenuB = ({ items,active, closeMenu}) => {
         <ul className="menub-ul">
           {items.map((item, id) => (
             <li key={id} className="menub-li">
-              <Link to={item.to} className="menub-a">
+              <Link to={item} className="menub-a">
                 {item.value}
               </Link>
               <span className="material-icons">
-                <i class={item.icon}></i>
+                <i className={item.icon}></i>
               </span>
             </li>
           ))}

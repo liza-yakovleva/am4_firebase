@@ -18,10 +18,6 @@ class Favorites extends Component {
     this.state = {
       userLoginInEmail:"",
       userName:"",
-      // data_favorites: [],
-      // favor_article:[],
-      // favor_game:[],
-      // favor_trailer:[],
     }
   }
 

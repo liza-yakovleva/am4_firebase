@@ -23,7 +23,7 @@ class CommentForm extends Component {
                 replies:[]
             }
         }
-        console.log(this.props.commentsLength)
+       
         
     }
 

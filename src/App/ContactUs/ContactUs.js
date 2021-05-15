@@ -140,7 +140,7 @@ alert('Ваше сообщение успешно отпрвлено')
                 value={this.state.newMessage.text}
                 name="comment"
                 id="text-area"
-                class = 'text-area'
+                className = 'text-area'
                 placeholder="Введите ваш текст..."
                 required></textarea>
             </label>
@@ -154,7 +154,7 @@ alert('Ваше сообщение успешно отпрвлено')
                 type='email'
                 value={this.state.newMessage.email}
                 id='email'
-                class = 'email'
+                className = 'email'
                 name='author_email'
                 placeholder="Введите ваш email..."
                 required />

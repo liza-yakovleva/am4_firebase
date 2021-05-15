@@ -36,10 +36,7 @@ class Trailer extends Component {
     }
   
   render() {
-      console.log(this.state.data_trailer)
-    console.log(settings)
-    console.log(styles)
-    console.log(optionsTrailer)
+    
 
   if (this.state.data_trailer) {
 

@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
 import "./enter.css"
 import '../../../common/style/base.css'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firebase-auth'
+
 import { database } from '../../../firebase'
 import avatarImg from '../../img/avatar13.png'
 
@@ -72,7 +74,7 @@ componentDidMount() {
 			<>
 					{
 					this.state.hasAccount ?
-						(<div class="field-for-registration field-ok">
+						(<div className="field-for-registration field-ok">
 					<form onSubmit={this.props.handleRegToggleClick}>
 						<h4>Вы успешно зарегистрировались, войдите в свой аккаунт</h4>
 						<input type="submit" value="Ok" 
@@ -80,7 +82,7 @@ componentDidMount() {
 						/>
 					</form></div> ) :
 						(
-				<div class="field-for-registration">
+				<div className="field-for-registration">
 					<form onSubmit={this.createAccount}>
 						<h3>Регистрация</h3>
 						<input type="text"

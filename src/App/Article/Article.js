@@ -37,11 +37,7 @@ class Article extends Component {
   
   render() {
     
-    // console.log(this.state.data_article)
-    // console.log(settings)
-    // console.log(styles)
-    // console.log(optionsArticle)
-    console.log(this.props)
+   
     
     if (this.state.data_article) {
       return (

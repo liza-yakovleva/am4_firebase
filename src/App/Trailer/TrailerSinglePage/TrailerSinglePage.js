@@ -15,7 +15,7 @@ class TrailerSinglePage extends Component {
       }
    }
 
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
     database.ref('/2/trailer_base/').on('value', (snapshot) => {
       this.setState({
         data: snapshot.val()
@@ -84,18 +84,18 @@ if (this.state.data.length===0) {
                               }>
                              {isLiked ? (
                                   <span>
-                                    <i class="fas fa-heart"></i>
+                                    <i className="fas fa-heart"></i>
                                   </span>
                                 ) : (
                                   <span>
-                                    <i class="far fa-heart"></i>
+                                    <i className="far fa-heart"></i>
                                   </span>
                                 )}
                               </button>
                           </div>
                           <div className={s.pag_game_num}>21</div>
                           <div className={s.pag_comment_ico}>
-                            <i class="far fa-comment-alt"></i>
+                            <i className="far fa-comment-alt"></i>
                           </div>
                         </div>
                       </div>

@@ -54,11 +54,11 @@ class GameItem extends Component {
               >
                 {isLiked ? (
                   <span>
-                    <i class="fas fa-heart"></i>
+                    <i className="fas fa-heart"></i>
                   </span>
                 ) : (
                   <span>
-                    <i class="far fa-heart"></i>
+                    <i className="far fa-heart"></i>
                   </span>
                 )}
               </button>

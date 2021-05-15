@@ -15,7 +15,7 @@ class ArticleSinglePage extends Component {
       }
    }
 
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
     database.ref('/0/article_base/').on('value', (snapshot) => {
       this.setState({
         data: snapshot.val()
@@ -95,12 +95,12 @@ class ArticleSinglePage extends Component {
                                 {isLiked
                                   ? (
                                   <span>
-                                    <i class="fas fa-heart"></i>
+                                    <i className="fas fa-heart"></i>
                                   </span>
                                   )
                                   : (
                                   <span>
-                                    <i class="far fa-heart"></i>
+                                    <i className="far fa-heart"></i>
                                   </span>
                                 )}
                               </button>

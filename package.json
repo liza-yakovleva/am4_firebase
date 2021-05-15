@@ -1,6 +1,6 @@
 {
-  "name": "c",
-  "version": "0.1.0",
+  "name": "am4",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@farbenmeer/react-spring-slider": "^1.3.4",
@@ -58,7 +58,12 @@
   },
   "main": "index.js",
   "devDependencies": {},
-  "author": "",
+  "author": "Liza Yakovleva",
   "license": "ISC",
-  "description": ""
+  "description": "am4",
+  "keywords": [
+    "js",
+    "react",
+    "firebase"
+  ]
 }

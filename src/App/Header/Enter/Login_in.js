@@ -1,11 +1,12 @@
 import React from 'react'
 import "./enter.css"
 import '../../../common/style/base.css'
- import Checkbox from '@material-ui/core/Checkbox';
-import { render } from '@testing-library/react';
+
 import { Component } from 'react';
-import firebase from 'firebase'
-// import { Checkbox } from '@material-ui/core';
+import firebase from 'firebase/app'
+import 'firebase/firebase-auth'
+import 'firebase/firebase-database'
+
 class Login_in extends Component {
 	constructor(props) {
 		super(props)
@@ -57,7 +58,7 @@ class Login_in extends Component {
 			<>
 				{
 					this.state.hasAccount ?
-						(<div class="field-for-registration field-ok">
+						(<div className="field-for-registration field-ok">
 					<form onSubmit={this.props.setLog}>
 								<h4>Вы успешно вошли в свой аккаунт {this.state.userEmail}</h4>
 						<input type="submit" value="Ok" 

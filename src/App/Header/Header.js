@@ -6,7 +6,8 @@ import Enter from './Enter/Enter'
 import EnterOk from './Enter/EnterOk'
 import MenuB from './Bur/MenuВ'
 import '../../common/style/base.css'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 import './Menu/menu.css'
 import './Search/search.css'
 import { Route } from 'react-router-dom'
@@ -54,7 +55,7 @@ constructor(props) {
    }
  
   render() {
-    console.log(this.state.user)
+
     
     return (
       <header className="header">
